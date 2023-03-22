@@ -1,3 +1,279 @@
-/* .url {
-    display: none;
+@font-face {
+    font-family: 'Pokemon';
+    src: local('Pokemon'),
+        url('/img/Pokemon.ttf') format('woff2'), 
+        url('/img/Pokemon.ttf') format('woff'),
+        url('/img/Pokemon.ttf') format('ttf'),
+        url('/img/Pokemon.ttf') format('eot');
+}
+
+
+
+body {
+    font-family: 'Pokemon';
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/img/1159692.jpg') center/cover fixed;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: #f9cd54;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container h1 {
+    color: #f9cd54;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.title-card {    
+    height: 300px;
+    border: 2px solid #f9cd54;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.cards {
+    text-align: center;
+    margin: 0;
+}
+
+.infoBlock {
+    border: 2px solid #f9cd54;
+    width: 70%;
+    padding: 0 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    background-color: rgba(249, 205, 84, 0.2);
+}
+
+.btnBack {
+    width: 78%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnBack h1 {
+    width: 30%;
+    box-shadow: 0px 0px 15px black;
+    border: 2px solid #f9cd54;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.cards-img {
+    width: 100%;
+    height: 70%;
+}
+
+.leftBlock {
+    grid-column: 1/3;
+}
+
+.cardTitleName {
+    margin: 0;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+    color: rgb(249, 205, 84);
+    letter-spacing: 0px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+span {
+    color: green;
+}
+
+
+
+.rightBlock {
+    grid-column: 3/5;
+    height: 500px;
+    width: 700px;
+}
+
+
+
+.bulbasaur {
+    background: url(/img/Bulbasaur.png) center/cover;
+}
+
+.ivysaur{
+    background: url(/img/Ivysaur.png) center/cover;
+}
+
+.venusaur{
+    background: url(/img/venusaur.png) center/cover;
+}
+
+.charmander {
+    background: url(/img/charmander.png) center/cover;
+}
+
+.charmeleon {
+    background: url(/img/charmeleon.png) center/cover;
+}
+
+.charizard {
+    background: url(/img/charizard.png) center/cover;
+}
+
+.squirtle {
+    background: url(/img/squirtle.png) center/cover;
+}
+
+.wartortle {
+    background: url(/img/wartortle.png) center/cover;
+}
+
+.blastoise {
+    background: url(/img/blastoise.png) center/cover;
+}
+
+.caterpie {
+    background: url(/img/caterpie.png) center/cover;    
+}
+
+.metapod {
+    background: url(/img/metapod.png) center/cover;
+}
+
+.butterfree {
+    background: url(/img/butterfree.png) center/cover;
+}
+
+.weedle {
+    background: url(/img/weedle.png) center/cover;
+}
+
+.kakuna {
+    background: url(/img/kakuna.png) center/cover;
+}
+
+.beedrill {
+    background: url(/img/beedrill.png) center/cover;
+}
+
+.pidgey {
+    background: url(/img/pidgey.png) center/cover;
+}
+
+.pidgeotto {
+    background: url(/img/pidgeotto.png) center/cover;
+}
+
+.pidgeot {
+    background: url(/img/pidgeot.png) center/cover;
+}
+
+.rattata {
+    background: url(/img/rattata.png) center/cover;
+}
+
+.raticate {
+    background: url(/img/raticate.png) center/cover;
+}
+
+/* 
+.bulbasaur {
+    background: url(/img/Bulbasaur.png) center/cover;
+}
+
+.ivysaur{
+    --personal: url(/img/Ivysaur.png) center/cover;
+}
+
+.venusaur{
+    --personal: url(/img/venusaur.png) center/cover;
+}
+
+.charmander {
+    --personal: url(/img/charmander.png) center/cover;
+}
+
+.charmeleon {
+    --personal: url(/img/charmeleon.png) center/cover;
+}
+
+.charizard {
+    --personal: url(/img/charizard.png) center/cover;
+}
+
+.squirtle {
+    --personal: url(/img/squirtle.png) center/cover;
+}
+
+.wartortle {
+    --personal: url(/img/wartortle.png) center/cover;
+}
+
+.blastoise {
+    --personal: url(/img/blastoise.png) center/cover;
+}
+
+.caterpie {
+    --personal: url(/img/caterpie.png) center/cover;    
+}
+
+.metapod {
+    --personal: url(/img/metapod.png) center/cover;
+}
+
+.butterfree {
+    --personal: url(/img/butterfree.png) center/cover;
+}
+
+.weedle {
+    --personal: url(/img/weedle.png) center/cover;
+}
+
+.kakuna {
+    --personal: url(/img/kakuna.png) center/cover;
+}
+
+.beedrill {
+    --personal: url(/img/beedrill.png) center/cover;
+}
+
+.pidgey {
+    --personal: url(/img/pidgey.png) center/cover;
+}
+
+.pidgeotto {
+    --personal: url(/img/pidgeotto.png) center/cover;
+}
+
+.pidgeot {
+    --personal: url(/img/pidgeot.png) center/cover;
+}
+
+.rattata {
+    --personal: url(/img/rattata.png) center/cover;
+}
+
+.raticate {
+    --personal: url(/img/raticate.png) center/cover;
 } */
