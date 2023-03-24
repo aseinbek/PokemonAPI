@@ -62,7 +62,7 @@ body {
     padding: 0 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px black;
-    background-color: rgba(249, 205, 84, 0.2);
+    background-color: rgba(72, 9, 244, 0.3);
 }
 
 .btnBack {
@@ -110,9 +110,35 @@ span {
 
 
 .rightBlock {
+    display: flex;
     grid-column: 3/5;
     height: 500px;
     width: 700px;
+}
+
+.img-block {
+    width: 400px;
+}
+
+.btn-content {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background: rgba(2, 119, 252, 0.9);
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid #f9cd54;
+    color: #f9cd54;
+}
+
+.btn-object {
+    margin: 0 20px;
+    font-family: 'Pokemon';
+    font-size: 30px;
 }
 
 
@@ -196,84 +222,3 @@ span {
 .raticate {
     background: url(/img/raticate.png) center/cover;
 }
-
-/* 
-.bulbasaur {
-    background: url(/img/Bulbasaur.png) center/cover;
-}
-
-.ivysaur{
-    --personal: url(/img/Ivysaur.png) center/cover;
-}
-
-.venusaur{
-    --personal: url(/img/venusaur.png) center/cover;
-}
-
-.charmander {
-    --personal: url(/img/charmander.png) center/cover;
-}
-
-.charmeleon {
-    --personal: url(/img/charmeleon.png) center/cover;
-}
-
-.charizard {
-    --personal: url(/img/charizard.png) center/cover;
-}
-
-.squirtle {
-    --personal: url(/img/squirtle.png) center/cover;
-}
-
-.wartortle {
-    --personal: url(/img/wartortle.png) center/cover;
-}
-
-.blastoise {
-    --personal: url(/img/blastoise.png) center/cover;
-}
-
-.caterpie {
-    --personal: url(/img/caterpie.png) center/cover;    
-}
-
-.metapod {
-    --personal: url(/img/metapod.png) center/cover;
-}
-
-.butterfree {
-    --personal: url(/img/butterfree.png) center/cover;
-}
-
-.weedle {
-    --personal: url(/img/weedle.png) center/cover;
-}
-
-.kakuna {
-    --personal: url(/img/kakuna.png) center/cover;
-}
-
-.beedrill {
-    --personal: url(/img/beedrill.png) center/cover;
-}
-
-.pidgey {
-    --personal: url(/img/pidgey.png) center/cover;
-}
-
-.pidgeotto {
-    --personal: url(/img/pidgeotto.png) center/cover;
-}
-
-.pidgeot {
-    --personal: url(/img/pidgeot.png) center/cover;
-}
-
-.rattata {
-    --personal: url(/img/rattata.png) center/cover;
-}
-
-.raticate {
-    --personal: url(/img/raticate.png) center/cover;
-} */
